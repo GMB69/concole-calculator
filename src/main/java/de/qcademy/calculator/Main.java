@@ -10,9 +10,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Pattern plusOppattern = Pattern.compile("\\s*(\\d+)\\s*\\+\\s*(\\d+)|\\s*\\+\\s*(\\d+)|\\s*(\\d+)");    // Addition
         Pattern multiplyOppattern = Pattern.compile("\\s*(\\d+)\\s*\\*\\s*(\\d+)|\\s*\\*\\s*(\\d)|\\s+(\\d+)"); // Multiplikation
-        Pattern subtractOppattern = Pattern.compile("\\s*(\\d+)\\s*\\*\\s*(\\d+)|\\s*\\*\\s*(\\d)|\\s+(\\d+)"); // Subtraktion
-        Pattern divideOppattern = Pattern.compile("\\s*(\\d+)\\s*\\*\\s*(\\d+)|\\s*\\*\\s*(\\d)|\\s+(\\d+)");   // Division
-        Pattern moduloOppattern = Pattern.compile("\\s*(\\d+)\\s*\\*\\s*(\\d+)|\\s*\\*\\s*(\\d)|\\s+(\\d+)");   // Modulo
+        Pattern subtractOppattern = Pattern.compile("\\s*(\\d+)\\s*\\-\\s*(\\d+)|\\s*\\-\\s*(\\d)|\\s+(\\d+)"); // Subtraktion
+        Pattern divideOppattern = Pattern.compile("\\s*(\\d+)\\s*\\/\\s*(\\d+)|\\s*\\/\\s*(\\d)|\\s+(\\d+)");   // Division
+        Pattern moduloOppattern = Pattern.compile("\\s*(\\d+)\\s*\\%\\s*(\\d+)|\\s*\\%\\s*(\\d)|\\s+(\\d+)");   // Modulo
         Pattern quitPattern = Pattern.compile("^\\s*:q\\s*$");
 
         boolean calculatorStopped = false;
